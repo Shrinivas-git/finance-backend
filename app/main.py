@@ -1,6 +1,7 @@
+import os
+import subprocess
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-
 from app.core.config import settings
 from app.database import Base, engine
 from app.routers import auth, dashboard, transactions, users
@@ -65,3 +66,6 @@ def root():
 @app.get("/health", tags=["Health"])
 def health():
     return {"status": "ok"}
+
+if os.getenv("RUN_SEED") == "true":
+    subprocess.run(["python", "seed.py"], check=False)
