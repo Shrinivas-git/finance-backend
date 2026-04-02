@@ -1,5 +1,17 @@
 # Finance Dashboard Backend
 
+## Live Demo
+
+| | |
+|---|---|
+| API Base URL | https://web-production-88dfa.up.railway.app |
+| Interactive Docs (Swagger) | https://web-production-88dfa.up.railway.app/docs |
+| ReDoc | https://web-production-88dfa.up.railway.app/redoc |
+
+> Use the test credentials below to log in via `/auth/login`, copy the token, click **Authorize** in `/docs`, and explore all endpoints.
+
+---
+
 A role-based financial records management API built with **FastAPI**, **SQLAlchemy**, and **SQLite** (swappable to PostgreSQL).
 
 ---
